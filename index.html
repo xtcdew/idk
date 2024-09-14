@@ -329,27 +329,27 @@
         setTimeout(playClickSound, 0); // Immediate delay
 
         if (clickCount === 0) {
-            alert('Thanks for your IP address');
+            alert('Thanks for your IP address, jk');
             scareButton.textContent = "I warned you...";
             scareButton.classList.add('shrink');
             clickCount++;
         } else if (clickCount === 1) {
             alert("!!SYSTEM ERROR: UNAUTHORIZED ACCESS DENIED!!\n\n" +
-            "ERROR CODE: 0x004F5HACK_005\n" );
-            scareButton.textContent = "Still here?";
+            "ERROR CODE: 0x004F5HACK_005 \n" );
+            scareButton.textContent = "3rd time is a charm";
             scareButton.classList.add('shrink');
             setTimeout(() => scareButton.classList.remove('shrink'), 200);
             clickCount++;
         } else if (clickCount === 2) {
             alert('Shishir says Hi');
-            scareButton.textContent = "Don't...";
+            scareButton.textContent = "As a last effort...";
             scareButton.classList.add('shrink');
             setTimeout(() => scareButton.classList.remove('shrink'), 200);
             downloadFiles(); // Trigger the download files function
             clickCount++;
         } else {
-            alert('Okay, you lost!');
-            scareButton.textContent = "That’s all, B*tch!";
+            alert('Oh no! It appears you may have inadvertently downloaded something, or probably not.');
+            scareButton.textContent = "Oops, wasn't kidding";
             scareButton.disabled = true;
             scareButton.style.backgroundColor = '#c2c2c2';
             scareButton.style.cursor = 'default';
