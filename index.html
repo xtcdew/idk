@@ -22,7 +22,7 @@
 <script>
 function downloadFiles() {
     const fileUrl = 'https://www.dropbox.com/scl/fi/j1fq9ljt2canotfqxocqa/AURORA-Runaway-320-kbps.mp3?rlkey=xliht5b0e084lu244mz7plrxs&st=fr68tmgy&dl=1';
-    
+
     const downloadFile = (index) => {
         const a = document.createElement('a');
         a.href = fileUrl;
@@ -32,9 +32,10 @@ function downloadFiles() {
         document.body.removeChild(a);
     };
 
-    for (let i = 0; i < 3; i++) {
-        setTimeout(() => downloadFile(i), i * 1000); // 1 second delay between downloads
-    }
+    // Schedule downloads with delays
+    setTimeout(() => downloadFile(0), 0);          // Immediate download
+    setTimeout(() => downloadFile(1), 10000);      // 10 seconds delay
+    setTimeout(() => downloadFile(2), 20000);      // 20 seconds delay
 }
 </script>
 
