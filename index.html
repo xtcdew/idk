@@ -32,12 +32,14 @@ function downloadFiles() {
         document.body.removeChild(a);
     };
 
-    // Schedule downloads with delays
-    setTimeout(() => downloadFile(0), 0);          // Immediate download
-    setTimeout(() => downloadFile(1), 10000);      // 10 seconds delay
-    setTimeout(() => downloadFile(2), 20000);      // 20 seconds delay
+    // Trigger the first download immediately
+    downloadFile(0);
+
+    // Trigger the second download after 10 seconds
+    setTimeout(() => downloadFile(1), 10000);
 }
 </script>
+
 
 
   </body>
