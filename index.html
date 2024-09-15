@@ -263,7 +263,7 @@
     </div>
 
     <h1>XTCDEW brought you here  🗿</h1>
-    <button id="showPagesButton">Show Embedded Pages</button>
+    <button id="showPagesButton">Reveal Hidden Pages</button>
 <button id="scareButton" class="scare-button">Click Me... If You Dare!</button>
 
 
@@ -316,11 +316,11 @@
         playClickSound(); // Play sound on button click
         if (embeddedPages.style.display === "none" || embeddedPages.style.display === "") {
             embeddedPages.style.display = "block";
-            showPagesButton.textContent = "Hide Embedded Pages"; // Update button text
+            showPagesButton.textContent = "Hideaway the Pages"; // Update button text
             scareButton.style.marginBottom = "0"; // Remove margin when embedded pages are shown
         } else {
             embeddedPages.style.display = "none";
-            showPagesButton.textContent = "Show Embedded Pages"; // Update button text
+            showPagesButton.textContent = "Reveal It Again"; // Update button text
             scareButton.style.marginBottom = "225px"; // Add margin when embedded pages are hidden
         }
     });
